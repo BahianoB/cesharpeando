@@ -1,0 +1,19 @@
+double horastrabajadas, valorhora = 5000, horaslimite = 160, horasextra, pagodehorasextra, pagototal;
+
+Console.WriteLine("Escriba las horas trabajadas durante el mes ");
+horastrabajadas = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Trabajaste en total: " + horastrabajadas +" horas");
+if (horastrabajadas > horaslimite)
+{
+     horasextra = horastrabajadas - horaslimite;
+     pagodehorasextra = horasextra * valorhora * 2;
+     pagototal = (horaslimite * valorhora) + pagodehorasextra;
+
+    Console.WriteLine("Su sueldo base por horas trabajadas es de: "+horastrabajadas*valorhora+" pesos.");
+    Console.WriteLine("Sus horas extras son: "+horasextra+" horas.");
+    Console.WriteLine("Sus horas extras pagadas al doble: "+pagodehorasextra+" pesos.");
+    Console.WriteLine("Su sueldo total seria de: " + pagototal+" patacones.");
+} else if (horastrabajadas <= horaslimite)
+{
+    Console.WriteLine("Su sueldo base por horas trabajadas es de: "+horastrabajadas*valorhora+" pesos.");
+}
