@@ -9,7 +9,7 @@ double pesos = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Por favor ingrese la moneda que quiera convertir:1-Dolar, 2-Euro, 3-Real");
 double monedaaconvertir = Convert.ToDouble(Console.ReadLine());
 
-double "1" = 1097;
+double "1" = 1097; //esto no hace nada xd
 double "3" = 194;
 double "2" = 1302;
 
